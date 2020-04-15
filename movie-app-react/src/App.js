@@ -31,11 +31,18 @@ class App extends React.Component {
     } else {
       return (
         <div className="App">
-          <Title title={this.state.selectedMovie.Title} />
+          <Title />
           <Movie
+            title={this.state.selectedMovie.Title}
             rating={this.state.selectedMovie.imdbRating}
             release_year={this.state.selectedMovie.Year}
           />
+          <h1>
+            {this.state.selectedMovie.Title} <br />
+            {this.state.selectedMovie.imdbRating}
+            <br />
+            {this.state.selectedMovie.Year}
+          </h1>
         </div>
       );
     }
