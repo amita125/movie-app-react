@@ -37,12 +37,6 @@ class App extends React.Component {
             rating={this.state.selectedMovie.imdbRating}
             release_year={this.state.selectedMovie.Year}
           />
-          <h1>
-            {this.state.selectedMovie.Title} <br />
-            {this.state.selectedMovie.imdbRating}
-            <br />
-            {this.state.selectedMovie.Year}
-          </h1>
         </div>
       );
     }

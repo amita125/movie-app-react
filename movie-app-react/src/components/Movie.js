@@ -1,12 +1,12 @@
 import React from "react";
-function Movie() {
+function Movie(props) {
   return (
     <div className="App-body">
-      {/* Movie Title :
+      Movie Title :{props.title}
       <br />
-      Movie Rating : <br />
-      Year of Release : */}
-      <p>movie title : {this.Title}</p>
+      Movie Rating : {props.rating}
+      <br />
+      Year of Release :{props.release_year}
     </div>
   );
 }
